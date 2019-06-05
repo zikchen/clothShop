@@ -1,0 +1,27 @@
+
+button{
+    border-radius: unset !important;
+}
+.badge{
+    position: relative !important;
+    top: 4px !important;
+    right: 19px;
+    color: red;
+}
+
+.bag{
+    width: 45%;
+}
+
+/* rwd test */
+@media(max-width: 960px){
+    .menu-toggle{
+        display: none;
+    }
+}
+@media(max-width: 767px){
+    .menu-toggle{
+        display: show;
+    }
+}
+

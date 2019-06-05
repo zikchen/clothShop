@@ -1,0 +1,185 @@
+
+.loginout{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.loginout img{
+    width: 14px;
+    height: 17px;
+}
+.order_title span:first-of-type{
+    border-left: 3px solid #ffb1b6;
+    font-size: 22px;
+    color: #ffb1b6;
+}
+.order_title span:nth-child(2){
+    color:#dcdcdc;
+}
+.order_title{
+    font-weight: 600;
+}
+.order_list_pic{
+    background: #eee;
+}
+.pre_circle2{
+    position: relative;
+    width: 100px;
+    height: 50%;
+    box-sizing: border-box;
+    line-height: 35px;
+    background: linear-gradient(135deg, transparent 49.5%, #ffffff 49.5%, transparent 50.5%, transparent 50.5%);
+    right: 20%;
+    top: 5%;
+}
+
+.deadline{
+    position: absolute;
+    left: 20%;
+    bottom: 10%;
+}
+.card-img{
+    color:#c5c5c5;
+    text-align: -webkit-center;
+    /* font-size: 22px; */
+    background-color: #f0f0f0;
+    border-radius: 0 !important;
+
+}
+.card-deck .card{
+    flex: 1 0 50% !important;
+}
+
+.bag{
+        width:42%;
+    }
+
+@media(min-width:769px){
+    .card-deck .card{
+        flex:1 0 0% !important;
+    }
+    
+}
+.shop-badge{
+    border-radius: 999em;
+    background-color: #cbe68b;
+    width: 26%;
+    height: 20%;
+    position: absolute;
+    top:0;
+    right: 0; 
+    font-size: 20px;
+}
+.shop-badge img{
+    width: 37%;
+    position: relative;
+    top: 21px;
+}
+.shop-badge .month{
+    position: relative;
+    bottom: 31px;
+    right: 28px;
+}
+.shop-badge .day{
+    position: relative;
+    bottom: 41px;
+    right: -26px;
+}
+.shop-badge .dead{
+    position: relative;
+    bottom: 29px;
+}
+
+@media (min-width:767px){
+    .shop-badge {
+        border-radius: 999em;
+        background-color: #cbe68b;
+        /* width: 40%; */
+        /* height: 17%; */
+        width: 125px;
+        height: 125px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size:22px;
+    }
+    .shop-badge img {
+        width: 37%;
+        position: relative;
+        top: 22px;
+    }
+    .shop-badge .month {
+    position: relative;
+    bottom: 32px;
+    right: 25px;
+}
+    .shop-badge .day {
+    position: relative;
+    bottom: 42px;
+    right: -27px;
+}
+    .shop-badge .dead {
+    position: relative;
+    bottom: 36px;
+}
+    .bag {
+        width:75%;
+    }
+    
+}
+
+
+@media (min-width:1024px){
+.shop-badge{
+    border-radius: 999em;
+    background-color: #cbe68b;
+    width: 76px;
+    height: 76px;
+    position: absolute;
+    top:-5px;
+    right: 0; 
+    font-size: 16px;
+}
+.shop-badge img{
+    width: 37%;
+    position: relative;
+    top: 7px;
+}
+.shop-badge .month{
+    position: relative;
+    bottom: 27px;
+    right: 15px;
+}
+.shop-badge .day{
+    position: relative;
+    bottom: 38px;
+    right: -15px;
+}
+.shop-badge .dead{
+    position: relative;
+    bottom: 36px;
+}
+}
+
+
+.btn-outline-pink{
+    color: #ffb1b6 !important;
+    border-color: #ffb1b6 !important;
+}
+.badge{
+    position: relative !important;
+    top: 6px !important;
+    right: 23px;
+    color: red;
+    font-size: 13px;
+}
+
+@media (min-width:768px){
+.badge{
+    position: absolute !important;
+    top: 14px !important;
+    right: 12px;
+    color: red;
+    font-size: 13px !important;
+    }
+}

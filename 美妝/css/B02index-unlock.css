@@ -1,0 +1,29 @@
+
+
+@media (min-width:576px){
+    .order_bag2{
+        display: none;
+    }
+}
+@media (min-width:960px)
+{
+    .order_img:hover{
+        /* background: gray; */
+        filter: brightness(50%);
+        /* background: rgba(0, 0, 0, 0.3); */
+    }
+    .order_img{
+        /* background: rgba(0, 0, 0, 0.3); */
+        transition: all 0.5s ease 0s;
+    }
+    .order_bag2{
+        width: 30px;
+        position: absolute;
+        transform: translateX(-132px) translateY(-30px);
+        display: none;
+    }
+    .order_img:hover .order_bag2{
+        transform: translateX(-100px) translateY(-31px) ;
+        display: unset;
+    }
+}

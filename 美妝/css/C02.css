@@ -1,0 +1,50 @@
+.login_email{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@media(min-width:576px){
+    .small_pic{
+        flex: 0 0 20% !important;
+        max-width: 20% !important;
+    }
+    .large_pic{
+        flex: 0 0 80% !important;
+        max-width: 80% !important;
+    }
+    .commodity_des{
+        flex: 0 0 80% !important;
+        max-width: 80% !important;
+    }
+}
+@media(min-width:768px){
+    .small_pic img{
+        width: 55%;;    
+    }
+    .add-car{
+        width:200px;
+    }
+    .add-car img{
+        width: 10% !important;
+    }
+}
+@media(min-width:960px){
+    .small_pic{
+        flex: 0 0 15% !important;
+        max-width: 15% !important;
+    }
+    .large_pic{
+        flex: 0 0 40% !important;
+        max-width: 40% !important;
+    }
+    .commodity_des{
+        flex: 0 0 40% !important;
+        max-width: 40% !important;
+    }
+    /* .small_pic img{
+        width: 55%;;    
+    } */
+    
+}
+

@@ -1,0 +1,16 @@
+button,input,select{
+    border-radius:0 !important;
+}
+.btn_rule{
+    text-decoration: underline #fbbcc5;
+    color: #fbbcc5 !important;
+}
+.rule_close{
+    border: 1px solid #000;
+    border-radius: 999rem;
+    background-color: #000;
+    color: #fff;
+    float: right;
+    font-weight: 700;
+    cursor: pointer;
+}

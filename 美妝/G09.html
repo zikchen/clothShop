@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/G.css">
+    <link rel="stylesheet" href="css/B01index.css">
+    <link rel="stylesheet" href="css/G04.css">
+    <link rel="stylesheet" href="css/C02.css">
+    
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v3.2"></script>
+   
+
+
+
+
+</head>
+
+<body>
+    
+        <div class="header clearfix">
+            <nav class="navbar navbar-expand-md nav_ban justify-content-between col-sm-12">
+                <h1 class="col-sm-5 col-4">絲柏林日韓精品批發</h1>
+                <form class="form-inline justify-content-end col-sm-5 p-0" id="nav-form-btn">
+                    <input type="search">
+                    <div class="dropdown ">
+        
+                        <!-- 只是個購物車按鈕 -->
+                        <button class="btn btn-sm btn-cart" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                            data-flip="false" aria-haspopup="true" aria-expanded="false">
+                            <img src="image/02.PNG" alt="" class="bag"><span class="badge badge-pill" id="bagnum">0</span>
+        
+                        </button>
+        
+                        <!-- 購物車清單 -->
+                        <div class="dropdown-menu dropdown-menu-right p-3" aria-labelledby="dropdownMenuButton"
+                            style="max-width: 500px">
+        
+                            <h6 class="font-weight-bolder">已選擇商品</h6>
+        
+                            <table class="table cart-lists">
+                                <tbody>
+                                    <tr>
+                                        <td class="">
+                                            <a href="#removeModal" class="text-dark" data-toggle="modal" data-title=""
+                                                onclick="bagRemove(this);">
+                                                <i class="fas fa-trash-alt"></i>
+                                            </a>
+                                        </td>
+                                        <td><img src="image/B_05.PNG" alt="" style="height:50px; object-fit:contain"></td>
+                                        <td class="">金色歐美風戒指</td>
+                                        <td class="">1 組</td>
+                                        <td class="text-right">$345</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">
+                                            <a href="#removeModal" class="text-dark" data-toggle="modal" data-title="">
+                                                <i class="fas fa-trash-alt"></i>
+                                            </a>
+                                        </td>
+                                        <td><img src="image/B_05.PNG" alt="" style="height:50px; object-fit: cover"></td>
+                                        <td class="">HowFun</td>
+                                        <td class="">1 件</td>
+                                        <td class="text-right">$499</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+        
+        
+                            <a href="#cart" class="btn btn-dark btn-block ">
+                                <i class="fas fa-coins"></i> 結帳去
+        
+                            </a>
+        
+                        </div>
+                        <!-- 購物車清單 END -->
+                    </div>
+                    <div class="loginout">
+                        <img src="image/08.PNG" alt="" class="img-fluid">
+                        <a href="G01.html" id="user_email"
+                            class="text-dark text-decoration-none  border-right border-dark pr-2 login_email">test@example.com.tw</a>
+                        <a href="B01index.html" class="text-dark text-decoration-none p-0 col-sm-3 logout ml-md-2 m-0">登出</a>
+                    </div>
+                </form>
+            </nav>
+            <div class="">
+                <nav class="navbar navbar-expand-md navbar-light bg-dark">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+        
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav m-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link text-white" href="B02index-unlock.html">首頁 <span
+                                        class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-pink" href="B01index.html" id="navbarDropdown"
+                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    新品上架
+                                </a>
+                                <div class="dropdown-menu menu_border" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="B01index.html">預購區</a>
+                                    <a class="dropdown-item" href="B01index.html">現貨區</a>
+        
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="C01shoplist.html">銷售排行</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="C01shoplist.html">現貨專區</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="C01shoplist.html">長期開團</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="C01shoplist.html">優惠閃團</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="Eabout.html">關於SPRING</a>
+                            </li>
+                        </ul>
+        
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="content container">
+            <div class="row justify-content-between mt-5 mb-4">
+                <div class="headline">會員中心</div>
+                <ol class="breadcrumb mb-0 p-0" style="background-color:transparent;">
+                    <li class="breadcrumb-item"><a href="B02index-unlock.html" class="text-secondary"><img src="image/C_01.PNG"
+                                class="img-fluid w-25 mb-1" alt=""> 首頁</a></li>
+                    <li class="breadcrumb-item"><a class="text-secondary">會員中心</a></li>
+                </ol>
+            </div>
+            <div class="row">
+                <div class="col-3 border-right">
+                    <div class="mb-2 ml-3"><img src="image/G_01.PNG" class="img-fluid w-25" alt=""></div>
+                    <div class="mb-1 text-yellow ml-3"><img src="image/G_02.PNG" class="img-fluid mb-2" alt=""><span>&nbsp;VIP</span>
+                    </div>
+                    <div class="mb-2 ml-3">未結單金額 : <span class="text-pink">$2789</span></div>
+                    <div class="mb-4 ml-3 ">購物金 : <span class="text-pink">$2000</span></div>
+                    <ul>
+                        <li class="mb-3 "><a href="G01.html" class="text-dark">個人資料</a></li>
+                        <li class="mb-3"><a href="G02.html" class="text-dark">購物金儲值</a>
+                            <ul style="list-style: none; display: none;" class="pl-0 ml-3">
+                                <li class=" mb-2 mt-2">儲值</li>
+                                <li class="mb-2 text-pink">記錄明細</li>
+                            </ul>
+                        </li>
+                        <li class="mb-1">我的訂單
+                            <ul style="list-style: none;" class="p-0 ml-3">
+                                <li class=" mb-2 mt-2"><a href="G04.html" class="text-dark">待付款 <span
+                                    style="border-radius: 50%;height: 15px; width: 15px;display: inline-block;background: #aaaaaa;vertical-align: unset;">
+                                    <span style="display: block;    color: #FFFFFF;    height: 20px;    line-height: 14px;    text-align: center">
+                                        1</span>
+                                </span></a></li>
+                                <li class="mb-2"><a href="G05.html" class="text-dark">待出貨 <span
+                                    style="border-radius: 50%;height: 15px; width: 15px;display: inline-block;background: #aaaaaa;vertical-align: unset;">
+                                    <span style="display: block;    color: #FFFFFF;    height: 20px;    line-height: 14px;    text-align: center">
+                                        2</span>
+                                </span></a></li>
+                                <li class="mb-2 "><a href="G06.html" class="text-dark">待收貨 <span
+                                    style="border-radius: 50%;height: 15px; width: 15px;display: inline-block;background: #aaaaaa;vertical-align: unset;">
+                                    <span style="display: block;    color: #FFFFFF;    height: 20px;    line-height: 14px;    text-align: center">
+                                        2</span>
+                                </span></a></li>
+                                <li class="mb-2"><a href="G07.html" class="text-dark">已完成</a></li>
+                                <li class="mb-2 text-pink">退貨退款</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-9">
+                    <div class="col-12 member">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th colspan="5" class="text-right border-0 text-pink">訂單標號:CCT001212</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="width:26%;">
+                                        <img src="image/D_01購物車.gif" class="ml-4 img-fluid w-25" alt="">
+                                        民族風領巾
+                                    </td>
+                                    <td>米白色</td>
+                                    <td class="text-right">1</td>
+                                    <td class="text-right">$345</td>
+                                    <td class="text-center">審核中</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="image/D_01購物車.gif" class="ml-4 img-fluid w-25" alt="">
+                                        民族風領巾
+                                    </td>
+                                    <td>米白色</td>
+                                    <td class="text-right">1</td>
+                                    <td class="text-right">$345</td>
+                                    <td class="text-center">審核中</td>
+                                </tr>
+                                
+                                <tr class="table-last">
+                                    <!-- <td>111</td> -->
+                                    <td colspan="3" class="text-center">付款方式<span class="ml-4">郵局/銀行帳號</span></td>
+                                    <td>取貨方式<span class="ml-4">宅配</span></td>
+                                    <td>訂單總額<span class="ml-4 text-danger">$2130</span></td>
+                    
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                </div>
+            </div>
+            <br><br><br>
+        </div>
+        
+        <div class="footer navbar-fixed-bottom d-flex flex-sm-column flex-md-row p-4">
+        
+        
+            <div class="mr-4">
+                <h6 class="border-bottom pb-3">Contact Us</h6>
+                <div class="pt-3">
+                    <i class="far fa-clock"></i> 平日am09:00~18:00<br>
+                    第一個跟第三個星期六am09:00~17:00
+                </div>
+                <div class="pt-3">
+                    <i class="fas fa-phone"></i> (07)-5883388
+                </div>
+                <div class="pt-3">
+                    <i class="fas fa-mail-bulk"></i> spring092858@gmail.com
+                </div>
+                <div class="pt-3"><i class="fas fa-map-marker-alt"></i> 高雄市鼓山區永德街103號</div>
+        
+            </div>
+            <div class="mr-4">
+                <h6 class="border-bottom pb-3">Facebook & Line</h6>
+                <div id="fb-root" class="pt-3">
+                    <div class="fb-page " data-href="https://www.facebook.com/spring201888/" data-tabs="timeline"
+                        data-width="275px" data-height="110px" data-small-header="false" data-adapt-container-width="true"
+                        data-hide-cover="false" data-show-facepile="true">
+                        <blockquote cite="https://www.facebook.com/spring201888/" class="fb-xfbml-parse-ignore"><a
+                                href="https://www.facebook.com/spring201888/">Spring蕬柏林日韓高雄批發</a></blockquote>
+                    </div>
+                </div>
+                <div class="pt-3">LINE ID : &commat;jrg8347y(&commat;符號也要一起加入喔)</div>
+            </div>
+            <div class="">
+                <h6 class="border-bottom pb-3">Quick Link</h6>
+                <div class="d-flex flex-row">
+                    <div class="pt-3">
+                        <ul class="pl-0">
+                            <li><a href="B02index-unlock.html" class="text-decoration-none text-white">首頁</a></li>
+                            <li class="pt-4"><a href="B01index.html" class="text-decoration-none text-white">新品上架</a></li>
+                            <li class="pt-4"><a href="C01shoplist.html" class="text-decoration-none text-white">銷售排行</a></li>
+                            <li class="pt-4"><a href="C01shoplist.html" class="text-decoration-none text-white">現貨專區</a></li>
+                        </ul>
+                    </div>
+                    <div class="pt-3">
+                        <ul>
+                            <li><a href="C01shoplist.html" class="text-decoration-none text-white">長期開團</a></li>
+                            <li class="pt-4"><a href="C01shoplist.html" class="text-decoration-none text-white">優惠閃團</a></li>
+                            <li class="pt-4"><a href="Eabout.html" class="text-decoration-none text-white">關於SPRING</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+        
+        
+        </div>
+        <div class="copyright">
+            <div class="row-12 pt-3 pb-3">
+                <div class="col-md-12">
+                    <div class="col-md-12 d-flex justify-content-center">踰翔數位科技有限公司 &copy; Copyright2019 All Right
+                        Reserved
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top form-inline flex-column">
+            <div class="helper border border-dark">
+                <div class="helper_header bg-dark text-white text-center p-1">
+        
+                    線上聯繫
+                    <!-- <button type="button" class="close" aria-label="Close">
+                                                                                                                <span aria-hidden="true" class="" class="text-white">&times;</span>
+                                                                                                            </button> -->
+                </div>
+                <div class="helper_body mt-2">
+                    <form action="#">
+                        <div class="form-group col-sm-12">
+                            <label class="mb-1" for="">介紹自己<span class="text-danger">*</span></label>
+                            <input type="text" class="mb-1" required placeholder="請輸入名稱、電子郵件">
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <label class="mb-1" for="">電話號碼<span class="text-danger">*</span></label>
+                            <input type="text" class="mb-1" required placeholder="請輸入電話">
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <label for="" class="mb-1">訊息<span class="text-danger">*</span></label>
+                            <textarea class="mb-1" name="" id="" required style="resize : none;" cols="" rows=""></textarea>
+                        </div>
+                        <div class="form-group col-sm-12 d-flex justify-content-center mt-1">
+                            <button class="btn btn-dark">送出</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <button class="btn my-2 my-sm-0 service_helper" type="submit"><img src="image/04.PNG" alt="" class="w-75"></button>
+            <button class="btn my-2 my-sm-0 top-btn" type="submit"><img src="image/05.PNG" alt="" class="w-75"></button>
+        </div>
+    
+
+
+
+
+
+    
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+input{
+    border-radius: unset !important;
+}
+
+.breadcrumb a{
+    text-decoration: none;
+}
+.breadcrumb-item+.breadcrumb-item::before{
+    content: ">" !important;
+}
+.text-yellow img{
+    width:10%;
+}
+.table-last{
+    background-color:#fff6f7;
+}
+.table-vertical{
+    vertical-align: middle !important;
+}

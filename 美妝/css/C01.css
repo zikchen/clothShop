@@ -1,0 +1,21 @@
+.login_email{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@media(min-width:768px){
+.logout{
+    /* border-left: 2px solid #000 !important; */
+    border-radius: unset !important;
+    }
+}
+.content-page a{
+    display: block;
+}
+.focus_pag:focus{
+    background:#ffb1b6;
+    color:#fff !important;
+}
+
+

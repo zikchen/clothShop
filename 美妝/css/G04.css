@@ -1,0 +1,17 @@
+.unpaid_order{
+    width: 40%;
+}
+.member{
+        overflow-x: auto !important;
+    }
+.member table{
+        width: 768px;
+}
+@media (min-width:960px){
+    .member{
+        overflow-x: unset !important;
+    }
+    .member table{
+        width: 100%;
+    }
+}
